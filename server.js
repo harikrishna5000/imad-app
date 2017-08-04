@@ -18,11 +18,11 @@ app.get('/one', function (req, res) {
 });
 
 app.get('/two', function (req, res) {
-  res.send('t w o');
+  res.sendFile(path.join(__dirname, 'ui', 'krishna.html'))
 });
 
 app.get('/three', function (req, res) {
-  res.send('t h r e e ');
+ res.sendFile(path.join(__dirname, 'ui', 'harikrishna.html'))
 });
 
 
