@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/one', function (req, res) {
-  res.send('o n e');
+  res.sendFile(path.join(__dirname, 'ui', 'hari.html'))
 });
 
 app.get('/two', function (req, res) {
